@@ -1,0 +1,33 @@
+<h1>Libros</h1>
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th>ID</th>
+            <th>Codigo</th>
+            <th>Titulo</th>
+            <th>Autor</th>
+            <th>Editorial</th>
+            <th>Categoria</th>
+            <th>Cantidad</th>
+            <th>Estado</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let book of books">
+            <td>{{book.id}}</td>
+            <td>{{book.code}}</td>
+            <td>{{book.title}}</td>
+            <td>{{book.author}}</td>
+            <td>{{book.editorial}}</td>
+            <td>{{book.category}}</td>
+            <td>{{book.quantity}}</td>
+            <td>{{book.state}}</td>
+            <td>
+                <a class="btn btn-primary btn-sm" routerLink="/create-book/{{book.id}}">Editar</a>
+                <a class="btn btn-danger btn-sm" (click)="delete(book.id)">Eliminar</a>
+            </td>
+        </tr>
+    </tbody>
+</table><br><br>

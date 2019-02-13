@@ -1,0 +1,42 @@
+<div class="row justify-content-center mt-5">
+    <div class="col-md-5">
+      <h1 style="font-family:'Times New Roman', Times, serif; text-align: center">REGISTRO DE LIBROS</h1>
+        <div>
+          <div class="form-content">
+  
+            <div class="form-group">
+              <input type="text" class="form-control input-underline input-lg" [(ngModel)]="book.code"
+              id="code" name="code"  placeholder="Código" required>
+            </div>
+  
+            <div class="form-group">
+              <input type="text" class="form-control input-underline input-lg" [(ngModel)]="book.title"
+              id="title" name="title" placeholder="Título" required>
+            </div>
+  
+            <div class="form-group">
+              <input type="text" class="form-control input-underline input-lg" [(ngModel)]="book.author"
+              id="author" name="author" placeholder="Autor" required>
+            </div>
+  
+            <div class="form-group">
+              <input type="text" class="form-control input-underline input-lg" [(ngModel)]="book.editorial"
+              id="editorial" name="editorial" placeholder="Editorial" required>
+            </div>
+  
+            <div class="form-group">
+              <input type="text" class="form-control input-underline input-lg" [(ngModel)]="book.category"
+              id="category" name="category" placeholder="Categoría" required>
+            </div>
+
+            <div class="form-group">
+              <input type="number" class="form-control input-underline input-lg" [(ngModel)]="book.quantity"
+              id="quantity" name="quantity" placeholder="Cantidad" required>
+            </div>
+  
+            <div>
+              <a class="btn btn-primary" (click)="register()">Registrar</a>&nbsp;
+            </div><br><br><br><br>
+    </div>
+  </div>
+  
